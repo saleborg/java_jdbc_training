@@ -1,4 +1,4 @@
-package com.saleborg.lil.jdbc;
+package com.saleborg.lil.jdbc.models;
 
 import com.saleborg.lil.jdbc.util.DataTransferObject;
 
@@ -84,5 +84,20 @@ public class Customer implements DataTransferObject {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                '}';
     }
 }
